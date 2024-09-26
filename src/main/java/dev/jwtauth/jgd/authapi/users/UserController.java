@@ -32,4 +32,9 @@ public class UserController {
     public ResponseEntity<User> getUserById(@PathVariable int id) {
         return ResponseEntity.ok(userService.findUserById(id));
     }
+
+    @PostMapping
+    public ResponseEntity createUser(@RequestBody User user) {
+        return ResponseEntity.ok("User created");
+    }
 }
