@@ -80,7 +80,7 @@ public class User implements UserDetails {
 
     @Override
     public String getUsername() {
-        return fullName;
+        return email;
     }
 
     public int getId() {
